@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.jpg">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <title>Neural Network</title>
+</head>
+<style>
+    * {
+        background: #2c2c2b;
+    }
+
+    *::before {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(238, 237, 157), rgb(241, 137, 241));
+        clip-path: circle(30% at right 50%);
+    }
+
+    *::after {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#98c1e4, #ca1b58);
+        clip-path: circle(20% at 10% 10%);
+    }
+
+    .img {
+        position: absolute;
+        top: 5%;
+        left: 28%;
+        height: 50%;
+        width: 45%;
+    }
+
+    .p1 {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        color: ivory;
+        position: absolute;
+        top: 56%;
+        left: 11%;
+
+
+    }
+
+    .pp {
+        opacity: 1;
+        transition: inherit;
+        user-select: none;
+        /* supported by Chrome and Opera */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+
+    }
+
+    .btn-style {
+        position: absolute;
+        color: black;
+        left: 5%;
+        top: 5%;
+        border: 5px;
+        background-color: rgb(189, 189, 82);
+        margin: 5px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <a class="btn-style" href="../Blog_home">Back</a>
+    <img class="img" src="images/NN.png" alt="">
+    <p class="pp disabled">
+        Blog
+        Li-Fi Technogy
+        April 03, 2021
+        Li-Fi (also written as LiFi) is a wireless communication technology which utilizes light to transmit data and
+        position between devices.
+        Better Feature For Us!!
+        Nowadays, the most Important thing is this running World is INTERNET & DATA. In Today’s Digital Society we use
+        the technology which is used to send and receive the data wirelessly. We use the
+        internet to do every small thing in our day-to-day life. No one from us uses the hardware to transfer the data,
+        I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi tecr when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi tehnology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        eachLi-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.I w
+        remember when I used my pen drie(PD) or CD at the last time to transfer the things. Now,we’ll see the Great
+        Technology introduced by Harald aas during 2011.
+        At present,for the time being : :
+        In the Present situation we use Wi-Fi as a wireless networking technology that allows devices such as computers
+        (laptops and desktops), mobile devices (smartphones and wearables), and other equipment (printers and video
+        cameras) to
+        interface with the Internet. And in Wi-Fi Internet connectivity occurs through a wireless router. Where data Is
+        being transmitted by “Radio waves”.
+        On the other hand We all know that the Environment is getting harmed by the
+        intensive Radio Waves Government to India is giving knowledge about that daily, from the medium of Movies(Robot
+        2.0), environment campines, etc…
+        To avoid this and to make world more faster the new technology has been introduced
+        i.e. “Li-Fi”
+        Li-Fi
+        Li-Fi (light fidelity) works on VLC principle in simple terms we can say that it is a light based Wi-Fi
+        technology. In today’s World we like everything in the form of multitasking. So why should light be single
+        tasking? In this case the Li-Fi technology transmits data in the form of visible Light using the LED source. So
+        the House LED bulbs and LED lamps which are used as a light source can also be used to transmit the data.
+        FACTS : :
+        At the starting of this technical world there was a device called Bluetooth which was the very first device used
+        to transfer the data from one device to another. We use that technology so many days for data transferring. I
+        remember when I was using this bluetooth for the transmission of data it would take 2 to 3 hr to transfer one
+        movie of some files of about 700 to 10wrrfw00 mb. The connection was also weak and was getting disconnected many
+        times during transmission and it was tferfgaking too much battery and
+        also the main thing devices which arerrafae having a role in the process of transmission need to be close to
+        each
+        other.
+        Now also we use bluetooth but only to connect the
+        Audio(headphone,earphone,etc..) not to transfer the data.but, it was very useful at that time span. Now it will
+        not work…!
+        After that the new technology came under use was Wi-Fi the wireless radio wave communication.which we are using
+        today in our day-to-day life. When it came to know there is a technology named wi-fi which is faster than
+        bluetooth the whole world starteeerafjgfjwagjkwghd wjhdbgwjhdgjbfechcheabceakhcb ehgeuk heukrfh ejkr
+        fejkfheag,ehm, eafhgvjhmeaf bvhefbcvheafbhvbeasjvbaesfvb hbvsda bvsdaf vd
+        using that very fast. Because that was the need of the society at the starting.but, there were some problems
+        that i also faced which were the (1)costing of Wi-Fi. To connect to the Wi-Fi at our word place we need to Buy
+        the Router and the lan cable from the Wi-Fi connection center. Which is 4 to 5k and the Wi-Fi is a prepaid
+        service
+        based system in the limited time span. WI-Fi work on the principle of Radio Waves So it can cross the wall’s
+        because of this our network was not safe any buddy was able to connect that connection for free by hacking the
+        password. The speed is also slow for the present period. As we all are coming in online mode for everything and
+        in this
+        Covid-19 period almost everything was started online( On one call ).
+
+        This Radio wave environment is also getting harm and the Animals also by use of both Wi-fi or CD drive. By the
+        radiation of that radio waves everyone is having something of a problem.
+        And the common method is by using The PD pen drives. An external hardware device is used to save and transfer
+        the data but it has a limited space like 4gb, 8gb,16gb, etc...now we will see why li-Fi is better…?
+        Why is Li-Fi better ?
+
+        As we have an overlook on all the types of transmitting methods i feel like the Li-Fi is much better from all of
+        those because it has the speed which is 10 times more than Wi-Fi. It does not need any external device like
+        Rouyer and all..it is limited to the area like the area which the LED light covers only in that area the
+        connection will be supplied not like an Wi-Fi. Li-Fi,the communications cannot penetrate through walls and
+        doors. And Also we would think like if we want to work at night then we need to keep light on? But, the answer
+        is because we can manage the brightness of the LED
+        light at very low intensity and we can use Li-Fi at very high speed. The Li-Fi market was projected to have a
+        compound annual growth rate of 82% from 2013 to 2018 and to be worth over $6 billion per year by 2018. However,
+        the market has not developed as such and Li-Fi remains with a niche market, mainly for technology evaluation.
+        Li-Fi has the advantage of being useful in electromagnetic sensitive areas
+        such as in aircraft cabins, hospitals and nuclear power plants without causing electromagnetic interference.
+        Both Wi-Fi and Li-Fi transmit data over the electromagnetic spectrum, but whereas Wi-Fi utilizes radio
+        waves, Li-Fi uses visible, ultraviolet, and infrared light. While the US Federal
+        Communications Commission has warned of a potential spectrum crisis because Wi-Fi is close to full capacity,
+        Li-Fi has almost no
+        limitations on capacity. The visible light spectrum is 10,000 times larger than the entire radio frequency
+        spectrum. Researchers have reached data rates of over 224 Gbit/s,
+        which was much faster than typical fast broadband in 2013. Li-Fi is expected to be ten times cheaper than
+        Wi-Fi.[7] Short range, low reliability and high installation costs are the potential downsides.
+        Working:
+        It works similar to,light emitting Process we see any LED light source, if we provide a constant current to the
+        source it provides you the constant illumination or brightness which is digital 1. So as we change the current
+        that is flowing through this LED bulb the illumination or the brightness of the bulb will be minimum which is
+        digital 0.
+        So in this way by flickering the LED light source very rapidly in the form of 0’s and 1’s we can transmit the
+        data and this flickering is happening at million times we cannot see it by our naked eyes. This principle is
+        used to transmit the data wirelessly using this LI-Fi technology.
+        Now we will see the schematic of a Li-Fi transmitter and the receiver system. So as the data is coming from the
+        web server or the internet, first it will go to the modem it will provide it necessary modulation to the
+        incoming data stream. Then this data is fed to the LDE driver which changes the driving current for this LED
+        according to
+        the incoming streaming data. At the receiver end the optically receiving data is first converted into the
+        electrical signal using the photo receiver or photodiode and then after signal conditioning the data is fed to
+        the computer or laptop. based system in the limited time span. WI-Fi work on the principle of Radio Waves So it
+        can cross the wall’s
+        because of this our network was not safe any buddy was able to connect that connection for free by hacking the
+        password. The speed is also slow for the present period. As we all are coming in online mode for everything and
+        in this
+        Covid-19 period almost everything was started online( On one call ).
+
+        This Radio wave environment is also getting harm and the Animals also by use of both Wi-fi or CD drive. By the
+        radiation of that radio waves everyone is having something of a problem.
+        And the common method is by using The PD pen drives. An external hardware device is used to save and transfer
+        the data but it has a limited space like 4gb, 8gb,16gb, etc...now we will see why li-Fi is better…?
+        Why is Li-Fi better ?
+
+        As we have an overlook on all the types of transmitting methods i feel like the Li-Fi is much better from all of
+        those because it has the speed which is 10 times more than Wi-Fi. It does not need any external device like
+        Rouyer and all..it is limited to the area like the area which the LED light covers only in that area the
+        connection will be supplied not like an Wi-Fi. Li-Fi,the communications cannot penetrate through walls and
+        doors. And Also we would think like if we want to work at night then we need to keep light on? But, the answer
+        is because we can manage the brightness of the LED
+        light at very low intensity and we can use Li-Fi at very high speed. The Li-Fi market was projected to have a
+        compound annual growth rate of 82% from 2013 to 2018 and to be worth over $6 billion per year by 2018. However,
+        the market has not developed as such and Li-Fi remains with a niche market, mainly for technology evaluation.
+        Li-Fi has the advantage of being useful in electromagnetic sensitive areas
+        such as in aircraft cabins, hospitals and nuclear power plants without causing electromagnetic interference.
+        Both Wi-Fi and Li-Fi transmit data over the electromagnetic spectrum, but whereas Wi-Fi utilizes radio
+        waves, Li-Fi uses visible, ultraviolet, and infrared light. While the US Federal
+        Communications Commission has warned of a potential spectrum crisis because Wi-Fi is close to full capacity,
+        Li-Fi has almost no
+        limitations on capacity. The visible light spectrum is 10,000 times larger than the entire radio frequency
+        spectrum. Researchers have reached data rates of over 224 Gbit/s,
+        which was much faster than typical fast broadband in 2013. Li-Fi is expected to be ten times cheaper than
+        Wi-Fi.[7] Short range, low reliability and high installation costs are the potential downsides.
+        Working:
+        It works similar to,light emitting Process we see any LED light source, if we provide a constant current to the
+        source it provides you the constant illumination or brightness which is digital 1. So as we change the current
+        that is flowing through this LED bulb the illumination or the brightness of the bulb will be minimum which is
+        digital 0.
+        So in this way by flickering the LED light source very rapidly in the form of 0’s and 1’s we can transmit the
+        data and this flickering is happening at million times we cannot see it by our naked eyes. This principle is
+        used to transmit the data wirelessly using this LI-Fi technology.
+        Now we will see the schematic of a Li-Fi transmitter and the receiver system. So as the data is coming from the
+        web server or the internet, first it will go to the modem it will provide it necessary modulation to the
+        incoming data stream. Then this data is fed to the LDE driver which changes the driving current for this LED
+        according to
+        the incoming streaming data. At the receiver end the optically receiving data is first converted into the
+        electrical signal using the photo receiver or photodiode and then after signal conditioning the data is fed to
+        the computer or laptop.
+    </p>
+
+    <div class="p1">
+        <pre><p>
+        Neural Networks’ Smart Fact: The Joint Creating A Photo Is Belonged To All
+
+A neural network is a series of algorithms that endeavors to recognize underlying relationships in a 
+set of data through a process that mimics the way the human brain operates.
+
+
+By Dave Gardner,
+
+Neural networks are becoming smarter and smarter, almost like an avalanche. This is especially true
+in the realm of research on hybrid cars and other advanced computerized devices.Industry insiders also 
+see the benefits of AI technology. Automotive giant Ford recently added advanced driver assistance systems
+and safety services to its vehicles.
+According to Reuters, the company reported at least one accident-free month since the beginning of 2015.
+That fact was also made public by the Center for Auto Safety.
+Another figure that emerged from the Center is that the auto industry has not reported a single fatality
+ that could have been prevented by safety systems and Advanced Driver Assistance Systems.
+
+
+
+ 
+The reason for this is that Ford's AI is now supporting semi-autonomous and autonomous driving
+ technologies. It uses a combination of active and passive elements. The key to all of this is
+  "learning," which is when a computer uses algorithms to mimic the human brain.
+
+
+Now-a-days :-
+
+If neural networks were human brains, they would be considered truly "intelligent."
+Neural networks are not only growing in number and range of applications, they are also learning
+ faster than humans.
+Researchers from the University of Central Florida in Orlando conducted a study last year that showed
+
+ human neural networks outperform even top professional human chess players. The neural networks are 
+ less predictable than human experts, according to the findings.
+Prof. Srinivasa Narasimhan, one of the researchers on the UCF study, told IEEE
+Spectrum, "They don't have good old errors. Human experts have big errors and neural networks don't, 
+so they come up with more clever ways to do things. It's like the experts are the underdogs, trying
+ to defeat the computers."
+Companies like Nvidia are using neural networks and other AI technology to build neural networks 
+that can be trained to do a wide range of things. One use is to help create
+"machines that can do what we want."
+
+This is the power of AI, and companies like Nvidia are tapping into the power. At CES last month, 
+Nvidia revealed its AI computer chip, the TensorRT 4. This is an advanced version of the same chip
+ that Nvidia introduced in 2015.
+The main difference between the TensorRT 4 and its predecessor is in how the AI functions. The
+ new chip runs machine learning algorithms 10 times faster, and it is also more flexible in how
+  it can run.
+ 
+
+
+Advantages of Neural Networks For Auditing-in BPM, HIPAA & IoT
+
+
+
+Pervasive monitoring systems are a good approach to identify assets at risk (ARW).
+However, it does not provide enough information about changes in asset status. In addition, the
+ monitoring systems use rule-based detection, so it might not be feasible to automate for unexpected
+  incidents. This is where neural networks can come to the rescue. For example, when alerts are
+   triggered from changing state (system) state (resource usage, latency, latency thresholds),
+    a trained deep learning network can start to predict the signal as opposed to relying on
+     random detection. Deep learning provides a more effective and efficient neural network
+      and only has 5% of false positive rate as compared to a random network. The key benefits
+       of neural networks over rule-based detection are intuitive state monitoring, not only the ARW.
+
+
+Benefits of a Neural Network
+
+
+
+•	Inclusive and Integrated approach: Natural language processing (NLP) combined with automatic
+ text analysis facilitates automatically and quickly identifying the sensor data. This greatly
+  simplifies integration and enables seamless use for most environments and applications.
+
+
+•	Automatic learning: Deep learning allows the network to learn as it is trained. It can learn
+ the detection process, handling of alerts, and spotting the process errors. The
+network can even learn its own policies and will be able to operate in a multi-robot team for
+ performing complex tasks.
+ 
+•	Strong and Simplified models: Neural networks are able to learn complex objects by
+ themselves.
+
+
+Types of Neural Networks
+
+I’ve shown that by leveraging the power of basic math it is possible to build networks for just
+ about any number of data. In this article, I’ll dig into how those simple networks can be
+  utilized, how to implement them, and explore their performance properties.
+The simplest operation in a neural network is to count the number of consecutive pixel values
+ that pass between successive. Each network is composed of 2, 4, 8, 16, 32, 64,
+128, or 256 neurons.
+
+Now I understand that it’s possible to manually build a network with the first kind of
+ neurons, but I don’t recommend it. The command line is not your friend, and for advanced settings 
+ it is impossible to interactively control the parameters of the network.
+
+ 
+
+
+
+Let's look at the basic mathematics involved.
+
+●		Complex numbers :- To begin with, this network must have at least some input data.
+ What kind of input data you use is entirely up to you, but it doesn’t have to be very complex.
+  In a way, it’s almost exactly like your average Joe writing a computer program. You can add 
+  words and sentences to the input, change the color of a neuron, and even create an emitter. 
+  But the result will still be a digital signal. Neural networks, on the other hand, receive
+   digital signals.
+
+
+
+●		Inputs :- Inputs are given in a number of values in order. The number of values the
+ network should take on is the number of neurons in the network.
+There are a few reasons to keep the number of input values as low as possible. As mentioned,
+ it’s important to use basic math. It also helps the neural network to perform more effectively.
+  A network that has too many inputs will get stuck in an
+infinite loop. Too few inputs and it will perform poorly and incorrectly detect the input.
+●	Nodes :- The nodes in a neural network are the difference between the input and the output.
+ If you’re familiar with binary, it’s just a mathematical representation of 0 and 1.
+
+
+●	Residual neurons :-Residual neurons form the heart of a neural network. When a node fires,
+ one neuron in the residual layer sends the color value it used to be firing to the neurons that
+  were not activated. The residual layer of the network is where you can control which neurons are
+   being used.
+ 
+●	Training :- Because we had 11 input values and it took them 8 to output 1, I simply multiplied
+ the input values. I also used the same 3 neurons in the red and blue regions.
+
+
+Future of Neural Networks :-
+
+Blockchain Blocked Unblock Follow Following Sep 12, 2017
+
+Today, we can write a blockchain transaction and get the same result. But tomorrow what can
+ we expect from blockchain technology? First, blockchain technology will allow us to use digital
+  currencies.
+For example, ethereum has its own currency which can be traded against the U.S. dollar. This
+ is an example of innovation in finance. The developers of blockchain technology can make smart
+  contracts on the blockchain, and create smart financial
+instruments. For example, a Smart Contract can include a chain of articles where some function
+ is performing automatically. If a competitor of a company fails to fulfill his order, then the
+  contract automatically executes to punish the competitor.
+</p></pre>
+    </div>
+</body>
+
+</html>

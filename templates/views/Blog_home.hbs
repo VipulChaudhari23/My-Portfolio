@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.jpg">
+
+    <link rel="stylesheet" href="/public/css/blog.css"> 
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="container" data-tilt="50">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Lifi Technology</h3>
+            <pre><p>
+        Li-Fi (also written as LiFi) is a wireless
+    communication technology which utilizes 
+    light to transmit data and position
+    between devices.
+                </p></pre>
+                <a href="blog1">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HTML !-->
+        <a class="button-42" role="button" href="/">Home!!</a>
+    
+
+    <div class="container">
+        <div class="card" data-tilt data-tilt-max="25" data-tilt-glare="true" data-tilt-speed="400" data-tilt-max-glare= 1>
+            <div class="content">
+                <h2>02</h2>
+                <h3>Neural Network</h3>
+            <pre><p>
+        A neural network is a series of
+        algorithms that endeavors to 
+        recognize underlying relationships 
+        in a set of data through a process 
+        that mimics the way the human
+         brain operates.
+                </p></pre>
+                <a href="blog2">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="foo">
+        {{>footer}}
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js">
+    </script>
+    
+    <script type="text/javascript" src="/src//vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1
+        });
+    </script>
+    
+    
+
+</body>

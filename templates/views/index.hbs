@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.jpg">
+    <title>Vipul Chaudhari</title>
+</head>
+
+<body >
+
+    {{>navbar}}
+    {{!-- hero section start --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1>Learn More About</h1>
+                        <h1>NEW TECHOLOGIES</h1>
+                        <p>Technology is best when it brings <span class="bold-style">people together✌️</span></p>
+                        <a  class="btn-style btn-primary" href="../Blog_home">Read More</a>
+                    </div>
+                    {{!-- right side --}}
+                    <div class="col-md-4 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="images/home.svg" alt="herosection_image">
+                            <img src="images/home1.svg" alt="herosection_image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- hero section end --}}
+
+    {{!-- about us start --}}
+    <div class="container-fluid mt-5 about-style" id="aboutid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <h1 class="text-center main-heading">About ME!</h1>
+                <p class="text-center sub-heading">Developer!!</p>
+                <div class="row">
+                    <div class="col-md-4 col-12 hero-text">
+                        <figure>
+                            <img src="images/about2.svg" alt="herosection_image">
+                        </figure>
+                    </div>
+                    
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 hero-text d-flex justify-content-center align-items-start flex-column">
+                        <p>Hii, I'm Vipul Pradeep Chaudhari <br> Make it Work, Make it Right, Make it Fast. <br> Software Developer in <span class="bold-style">Python, FullStack Developer, And Cloud Computing</span>
+                            Operator. <br> Having an Integrated Knowledge with experience
+                            in developing Softwares And dynamic Web Developing.</p>
+                        <a class="btn-style btn-primary" href="../Portfolio">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- about us end --}}
+
+    {{!-- Services start --}}
+    {{>services}}
+    {{!-- Services end --}}  
+    
+    {{!-- footfer start --}}
+    {{>footer}}  
+    {{!-- footfer end --}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
